@@ -11,5 +11,6 @@ app.set("view engine", "ejs");
 
 // 미들 웨어 등록
 app.use("/", home);
+app.use(express.static(`${__dirname}/src/public`));
 
 module.exports = app;
